@@ -9,11 +9,14 @@
 </head>
 <body>
 <form>
-<input type="number" name="height" min="" max = "" required> Height	
-<input type="number" name="width"  min="" max = ""  required> Width	
-<button type="submit" id = "treeBtn" onclick= "return treeFun()" >Grow your tree</button>
-<div id="innerHTMLtxt"></div>
-
+<div class="buttons">
+	<label>Type a character: </label>
+	<input type="text" id="inputChar" required="Pick a character"><br>
+<br>
+	<label>Type a number</label>
+	<input type="text" id="number" required="Both fields mus have a value"><br>
+	<button id= "treeGrow">Grow your tree</button>
+</div>
 </body>
 </html>
 <!-- Create a tree function that should build a pine --> <!-- tree out of a character in the Chrome dev tools console. It accepts a single object as an argument. The object should have two key/value pairs.
