@@ -1,9 +1,4 @@
-
 var grow = document.getElementById("treeGrow");
-
-var myObject = {height: "number",character: "inputChar"};
-console.log(myObject);
-
 function anotherTree(clickevent){
 	console.log("event", clickevent);
 	var number = document.getElementById('number').value
@@ -16,18 +11,13 @@ function anotherTree(clickevent){
 			stars = stars + ' ';
 		}
 		for (var k = 0; k < 2 * i - 1; k++) {
-			stars = stars + "*"
+			stars = stars + inputChar;
 		}
 		consoleResults += stars;
-	console.log(stars);
+		if(i !== 0){
+			console.log(stars);
+
+		}
 	}
 }
-
 grow.addEventListener("click", anotherTree);
-
-// var person = {};
-// var key = "name";
-
-// person[key]  this is same as person.name  = "John";
-
-// console.log(person);
